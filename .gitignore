@@ -1,0 +1,4 @@
+# ignore all files in data
+data/
+#ignore jupyter check point files
+ipynb_checkpoints/
