@@ -2,3 +2,6 @@
 data/
 #ignore jupyter check point files
 ipynb_checkpoints/
+web-app-test/
+web-app/node_modules
+
