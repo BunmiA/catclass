@@ -4,4 +4,4 @@ data/
 ipynb_checkpoints/
 web-app-test/
 web-app/node_modules
-
+.idea/
