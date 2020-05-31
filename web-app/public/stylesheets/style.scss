@@ -1,30 +1,46 @@
+$cat-grey: #afb3ad;
+$cat-yellow: #f5ae20;
+$cat-pink: #d46367;
+$app-blue: #26aade;
+$black: #000;
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #26aade; }
+  background: $app-blue ;
+}
 
-h1 {
-  font: 70px "Lucida Grande", Helvetica, Arial, sans-serif; }
+h1{
+  font: 70px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
-h2 {
-  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif; }
+h2{
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
 .cat,
-.cat-ear, .cat-face, .cat-eye, .cat-pupil, .cat-nose, .cat-mouth, .cat-whiskers, .whisker, .instructions {
-  position: absolute; }
+.cat-ear, .cat-face, .cat-eye, .cat-pupil, .cat-nose, .cat-mouth, .cat-whiskers, .whisker,.instructions {
+  position: absolute;
+}
+.container{
 
+}
 .cat {
   margin: auto;
   top: 100px;
   left: 100px;
   width: 500px;
-  height: 500px; }
+  height: 500px;
+
+}
 
 .instructions {
   left: 500px;
   right: 500px;
   width: 500px;
-  height: 500px; }
+  height: 500px;
+}
 
 .cat-ear {
   top: 1px;
@@ -32,17 +48,21 @@ h2 {
   width: 80px;
   height: 80px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background: #afb3ad; }
+  background: $cat-grey;
+}
 
 .cat-ear.right {
-  transform: translateX(220px); }
+  transform: translateX(220px);
+}
 
 .cat-face {
   top: 80px;
   width: 300px;
   height: 200px;
   border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
-  background: #afb3ad; }
+  background: $cat-grey;
+  //border: 2px solid;
+}
 
 .cat-eye {
   top: 50px;
@@ -50,10 +70,13 @@ h2 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background: #f5ae20; }
+  background: $cat-yellow;
+  //border: 2px solid;
+}
 
 .cat-eye.right {
-  transform: translateX(110px); }
+  transform: translateX(110px);
+}
 
 .cat-pupil {
   top: 0px;
@@ -61,15 +84,18 @@ h2 {
   width: 20px;
   height: 50px;
   border-radius: 50% 50% 50% 55% / 50% 50% 50% 50%;
-  background: #000; }
+  background: $black;
+}
 
 .cat-nose {
-  background: #d46367;
+  background: $cat-pink;
   width: 30px;
   height: 30px;
   clip-path: polygon(50% 0%, 0 73%, 100% 73%);
   top: 100px;
-  left: 140px; }
+  left: 140px;
+  //border: 2px solid;
+}
 
 .cat-mouth {
   position: absolute;
@@ -78,31 +104,45 @@ h2 {
   border-radius: 0% 0% 100% 100%;
   border-bottom: 5px solid;
   top: 130px;
-  left: 130px; }
+  left: 130px;
+}
 
-.cat-whiskers.left {
+.cat-whiskers.left{
   top: 120px;
   width: 80px;
-  height: 10px; }
+  height: 10px;
+}
 
 .whisker {
   top: 10px;
   width: 100%;
-  border: 1px solid #000;
+  border: 1px solid $black;
   transform-origin: 100% 0;
-  transform: rotate(10deg); }
-  .whisker:nth-child(2) {
-    top: 20px;
-    transform: rotate(-15deg); }
-  .whisker:last-child {
-    top: 30px;
-    transform: rotate(-30deg); }
+  transform: rotate(10deg);
 
-.cat-whiskers.right {
+  &:nth-child(2) {
+    top: 20px;
+    transform: rotate(-15deg);
+
+  }
+  &:last-child {
+    top: 30px;
+    transform: rotate(-30deg);
+  }
+}
+
+.cat-whiskers.right{
   top: 155px;
   left: 230px;
   width: 80px;
   height: 10px;
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
-/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
