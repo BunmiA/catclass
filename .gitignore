@@ -1,7 +1,8 @@
 # ignore all files in data
 model/input/
 #ignore jupyter check point files
-ipynb_checkpoints/
+model/scripts/.ipynb_checkpoints/
 web-app-test/
 web-app/node_modules
 .idea/
+
