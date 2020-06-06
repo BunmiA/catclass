@@ -1,5 +1,5 @@
 # ignore all files in data
-data/
+model/input/
 #ignore jupyter check point files
 ipynb_checkpoints/
 web-app-test/

@@ -5,7 +5,7 @@ The project aims to create a cate breed classification application availibel on 
 
 ### Dataset 
 
-https://www.kaggle.com/crawford/cat-dataset
+https://www.kaggle.com/ma7555/cat-breeds-dataset
 
 ### Sources 
 Sources include 
