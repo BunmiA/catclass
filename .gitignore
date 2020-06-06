@@ -5,4 +5,5 @@ model/scripts/.ipynb_checkpoints/
 web-app-test/
 web-app/node_modules
 .idea/
-
+model/scripts/cat_class_model
+temp/
